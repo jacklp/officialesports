@@ -7,6 +7,7 @@ build: clean
 
 release: build
 	@echo installing release
+	rm -rf /tmp/uploads
 	mv /home2/officjh3/public_html/wp-content/uploads /tmp/uploads
 	rm -rf /home2/officjh3/public_html/*
 	tar -xf /home2/officjh3/officialesports/build/website_release.tar -C /home2/officjh3/public_html
