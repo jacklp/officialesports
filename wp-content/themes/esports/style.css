@@ -805,7 +805,8 @@ span + .edit-link:before,
 
 .site {
 	background-color: black;
-	max-width: 1260px;
+	width: 1260px;
+	margin:0 auto;
 	position: relative;
 }
 
@@ -4209,14 +4210,14 @@ a.post-thumbnail:hover {
 
 .site-content .leftCol{
 	float:left;
-	width:46%;
-	padding:2%;
+	width:48%;
+	padding:2% 2% 2% 0;
 }
 
 .site-content .rightCol{
 	float:left;
-	width:46%;
-	padding:2%;
+	width:48%;
+	padding:2% 0% 2% 2%;
 }
 .site-content .newsContainer h1 a{
 	color:#0cb8c6;
@@ -4233,10 +4234,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
 }
 
 .site-content .newsContainer .newsThumb{
-	width:50%;
+	width:30%;
 	margin-bottom:10px;
+	float:left;
+	clear:left;
 }
-.site-content .newsContainer .newsPostContainer{
-	border-bottom:#FFF;
-	border-bottom-style:dotted;
+.site-content .newsContainer .newsBody{
+	width:70%;
+	margin-bottom:10px;
+	float:left;
+}
+.site-content .newsContainer .newsBody h1{
+	margin-top:0px;
+	font-size:13px;
+	margin-bottom:5px;
+	margin-left:10px;
+}
+
+.site-content .newsBody p{
+	font-size:11px;
+	margin-left:10px;
 }

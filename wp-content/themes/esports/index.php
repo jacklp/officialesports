@@ -38,20 +38,25 @@ get_header(); ?>
 					$catPost = get_posts('cat=6&posts_per_page=-1'); 
 					    foreach ($catPost as $post) : setup_postdata($post); ?>
 				    		<div class="newsPostContainer">
-								<h1><a> <?php the_title(); ?></a></h1>
-								<div class="newsThumb">
+								
+			    				<div class="newsThumb">
 									<?php if ( has_post_thumbnail() ) {
 										the_post_thumbnail();
 									}?>
 								</div>
-							    <?php the_excerpt(); ?> 
+								<div class="newsBody">
+									<h1><a> <?php the_title(); ?></a></h1>
+							    	<?php the_excerpt(); ?> 
+								</div>
 							</div>
 						<?php endforeach;?>
 				</div>
 			</div>
 			<div class="rightCol">
 				<div class="videoContainer">
-					THIS IS WHERE THE VIDEO GOES
+					<div class="player">
+						<div id="myAlternativeContent"><a href="http://www.twitchtv.com/plumwd"><img class="alignnone size-full wp-image-10" alt="no-flash" src="http://officialesports.com/wp-content/plugins/twitch-tv-embed-suite/images/618x376.gif" /></a></div>
+					</div>
 				</div>
 			</div>
 
