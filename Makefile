@@ -7,8 +7,12 @@ build: clean
 
 release: build
 	@echo installing release
-	cd /home2/officjh3/public_html && rm -rf *
+	cd /home2/officjh3/public_html
+	mv /home2/officjh3/public_html/wp-content/uploads /tmp/uploads
+	rm -rf *
 	tar -xf /home2/officjh3/officialesports/build/website_release.tar -C /home2/officjh3/public_html
+	rm /home2/officjh3/public_html/wp-uploads
+	mv /tmp/uploads /home2/officjh3/public_html/wp-content/uploads
 
 clean:
 	@echo removing build directory
