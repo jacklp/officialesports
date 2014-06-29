@@ -10,7 +10,7 @@ release: build
 	mv /home2/officjh3/public_html/wp-content/uploads /tmp/uploads
 	rm -rf /home2/officjh3/public_html/*
 	tar -xf /home2/officjh3/officialesports/build/website_release.tar -C /home2/officjh3/public_html
-	rm /home2/officjh3/public_html/wp-content/uploads
+	rm - rf /home2/officjh3/public_html/wp-content/uploads
 	mv /tmp/uploads /home2/officjh3/public_html/wp-content/uploads
 
 clean:
